@@ -5,9 +5,13 @@
         </h2>
     </x-slot>
 
-    <div class="bg-slate-400">
-        @livewire('text-animation')
-
-        @livewire('animated-image')
+    <div class="bg-slate-400 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-4">
+        <div class="w-full md:w-1/2">
+            @livewire('text-animation')
+        </div>
+        <div class="w-full md:w-1/2">
+            @livewire('animated-image')
+        </div>
     </div>
+
 </x-app-layout>
